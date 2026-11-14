@@ -1,3 +1,3 @@
-Plant-Vs-Zombies\n
+Plant-Vs-Zombies
 -------------------
 Desktop-app
