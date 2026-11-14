@@ -1,0 +1,9 @@
+node_modules/
+dist/
+plus.7z
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+.vscode/

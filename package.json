@@ -1,0 +1,43 @@
+{
+  "name": "Plant-VS-Zombies",
+  "version": "1.0.0",
+  "description": "Plant-VS-Zombies By Corex Institut",
+  "main": "main.js",
+  "author": "Corex Institut",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.Plant-VS-Zombies.corex",
+    "productName": "Plant-VS-Zombies",
+    "asar": true,
+    "compression": "maximum",
+    "files": [
+      "main.js",
+      "index.html",
+      "src-app/**/*",
+      "src/**/*",
+      "package.json",
+      "config-app.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "src-app/pvz.ico"
+    },
+    "nsis": {
+      "installerIcon": "src-app/pvz.ico",
+      "uninstallerIcon": "src-app/pvz.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}
